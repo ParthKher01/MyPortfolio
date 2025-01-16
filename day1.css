@@ -10,7 +10,7 @@ body {
     padding: 15px 20px;
     background-color: #deb888;
     display: flex;
-    justify-content: space-between; /* Spaces logo and nav naturally */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -29,7 +29,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Adds spacing between nav items */
+    gap: 20px; 
 }
 
 nav ul li {
@@ -44,14 +44,6 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    padding: 30px;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
 }
 
 /* Intro Section */
@@ -73,6 +65,7 @@ footer {
     font-size: 3rem;
     margin-bottom: 10px;
 }
+
 .intro-info p{
     font-size: 1.2rem;
     line-height: 1.8;
@@ -85,6 +78,7 @@ footer {
     height: auto;
     border-radius: 10px;
     height: 500px;
+    object-fit: cover;
 }
 
 .btn-explore input[type="submit"]{
@@ -107,24 +101,190 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 4px 6px rbga(0,0,0,0.2);
 }   
-/* About and Contact Sections */
-#about, #contact {
+
+/* Highlights Section */
+#highlights {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 20px 0;
+    max-width: 960px;
+    box-sizing: border-box;
+}
+
+.highlight {
+    text-align: center;
+    max-width: 30%;
+}
+
+.highlight img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.highlight p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* About Sections */
+#about{
     max-width: 960px;
     margin: 20px auto;
     padding: 20px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color:#333;
+}
+
+.abt-skills{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.abt-skills > div {
+    flex: 1; 
+    max-width: 320px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.abt-skills h4{
+    font-size: 20px;
+    color:#444;
+}
+
+.abt-skills p{
+    font-size: 17px;
+    padding:5px 10px 5px 0;
+    word-spacing: 5px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 30px 20px; 
+    background-color: #000;
+    color: #fff; 
     text-align: center;
-    background-color: #f5f5f5;
-    border-radius: 10px;
+}
+
+footer div {
+    margin-top: 10px; 
+    display: flex;
+    gap: 15px; 
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff; 
+    text-decoration: underline;
+    transition: color ease-in 0.2s; 
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #intro {
         flex-direction: column;
         text-align: center;
     }
 
     .intro-image {
+        height: auto; 
         margin-top: 20px;
     }
+
+    .btn-explore input[type="submit"] {
+        padding: 12px 18px;
+        font-size: 0.9rem;
+    }
+
+    #highlights {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .highlight {
+        flex: 1 1 45%; 
+        max-width: 100%;
+    }
 }
+
+@media (max-width: 768px) {
+    .header-style {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #intro {
+        padding: 10px;
+    }
+
+    #highlights {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .abt-skills {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .abt-skills > div {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo a {
+        font-size: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    #intro h1 {
+        font-size: 2rem;
+    }
+
+    #intro p {
+        font-size: 1rem;
+    }
+
+    #highlights {
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer div {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
