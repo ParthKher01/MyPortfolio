@@ -120,6 +120,8 @@ nav ul li a:hover {
 .highlight img {
     width: 100%;
     height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -165,6 +167,18 @@ h3{
     font-size: 17px;
     padding:5px 10px 5px 0;
     word-spacing: 5px;
+}
+
+/* Philosophy Page*/
+
+.panel {
+    width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
