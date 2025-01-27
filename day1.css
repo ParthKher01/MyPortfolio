@@ -164,21 +164,28 @@ h3{
 }
 
 .abt-skills p{
-    font-size: 17px;
+    font-size: 18px;
     padding:5px 10px 5px 0;
     word-spacing: 5px;
 }
 
 /* Philosophy Page*/
 
-.panel {
-    width: 960px;
+section {
+    align-items: center;
+    justify-content: space-between;
     margin: 20px auto;
+    max-width: 960px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+.hero-img{
+    width: 100%;
+}
+.panel{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    word-spacing: 0.5rem;
 }
 
 /* Footer */
