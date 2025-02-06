@@ -9,7 +9,7 @@
 <body>
     <div class="header-style">
         <header>
-            <div class="logo"><a href="#"><img src="Group 1.svg" alt=""></a></div>
+            <div class="logo"><a href="#"><img src="Group 1.svg" alt="Logo"></a></div>
         </header>
         <nav>
             <ul>
@@ -19,37 +19,69 @@
             </ul>
         </nav>
     </div>
-    <!-- Main Content-->
-    <section>
-        <h1>Learning strategy</h1>
-        <h2>Interleaving</h2>
+
+    <!-- Main Content -->
+    <section class="section-learning">
+        <h1 class="title-learning">Learning Strategy</h1>
+        <h2 class="learning-topic">Interleaving</h2>
         <div>
             <img class="hero-img" src="interleaving+blocks.JPG" alt="Learning strategy">
         </div>
-        <p>
-            <h3>What is Interleaving?</h3>
-            
-            <div>
-                Interleaving is a learning method where different topics or skills 
-                are mixed together in a study session instead of focusing on just 
-                one at a time. 
-                For example, if you are studying math, instead of spending hours on 
-                one type of problem, you could switch between solving equations, working 
-                with graphs, and practicing word problems.                
-            </div>
-            <h3>Example</h3>
-            <div>
-                
-            </div>
+        
+        <h3 class="learning-desc">What is Interleaving?</h3>
+        <p class="learning-desc-content">
+            Interleaving is a learning method where different topics or skills are mixed together 
+            in a study session instead of focusing on just one at a time. For example, if you are 
+            studying math, instead of spending hours on one type of problem, you could switch 
+            between solving equations, working with graphs, and practicing word problems.
 
         </p>
+
+        <h3>Example: Interleaving in Programming</h3>
+        <p>
+            In computer programming, key concepts include loops, conditional statements, switch cases, and functions.  
+            Instead of learning them separately, interleaving suggests practicing them together** in one study session.  
+            A good approach is to create a program that integrates multiple concepts.
+        </p>
+
+        <h4>Code Example:</h4>
+        <pre>
+            <code>
+                def process_numbers(numbers):
+                    total_even = 0
+                    total_odd = 0
+
+                    for num in numbers:  # Looping through the list
+                        if num % 2 == 0:  # Conditional statement
+                            total_even += num
+                        else:
+                            total_odd += num
+
+                    return total_even, total_odd  # Returning values using a function
+
+                # Example usage
+                numbers_list = [10, 15, 20, 25, 30]
+                even_sum, odd_sum = process_numbers(numbers_list)
+
+                print(f"Sum of even numbers: {even_sum}")
+                print(f"Sum of odd numbers: {odd_sum}")
+            </code>
+        </pre>
+
+        <h3>Why Does Interleaving Work in Programming?</h3>
+        <ul>
+            <li><strong>Better Problem-Solving:</strong> Switching between topics strengthens active recall, improving problem-solving skills.</li>
+            <li><strong>Stronger Conceptual Links:</strong> Programming integrates multiple concepts rather than learning them in isolation.</li>
+            <li><strong>Greater Adaptability:</strong> Real-world coding requires mixing loops, conditionals, and functions constantly.</li>
+        </ul>
     </section>
+
     <footer>
         <p>© 2025 Parth's Portfolio. All rights reserved.</p>
         <div>
-            <a href="">LinkdIn</a>
-            <a href="">Indeed</a>
-            <a href="">Google</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Indeed</a>
+            <a href="#">Google</a>
         </div>
     </footer>
 </body>
