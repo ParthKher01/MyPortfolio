@@ -214,12 +214,11 @@ section {
     margin-bottom: 20px;
 }
 
-.learning-desc-content {
+p .learning-desc-content {
     font-size: 1.8rem;
     color: #555;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 20px;
 }
 
 h4 {
