@@ -204,8 +204,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .title-learning {
     font-size: 2.5rem;
     text-align: center;
@@ -219,7 +217,7 @@ section {
     margin-bottom: 20px;
 }
 
-.learning-desc {
+.learning-desc-content{
     font-size: 1.5rem;
     color: #555;
     margin-top: 20px;
@@ -275,10 +273,6 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Strong text inside paragraphs */
-strong {
-    color: #007bff;
-}
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
