@@ -23,6 +23,7 @@ body {
     padding: 10px;
     text-decoration: none;
 }
+
 .logo img{
     width: 50px;
     height: 50px;
@@ -49,6 +50,50 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+nav ul li {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;  /* Align to the right */
+    background: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    max-width: fit-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    white-space: nowrap; 
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /* Intro Section */
