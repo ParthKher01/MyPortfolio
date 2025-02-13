@@ -323,7 +323,9 @@ ul li {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
+div p .mindset{
+    font-size: 1.4rem;
+}
 
 /* Footer */
 footer {
