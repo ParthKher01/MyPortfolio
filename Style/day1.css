@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5;
+    /*color: #191d34;*/
 }
 
 /* Header */
@@ -323,8 +324,9 @@ ul li {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-div p .mindset{
-    font-size: 1.4rem;
+.mindset{
+    font-size: 1.3rem;
+    color: #191d34;
 }
 
 /* Footer */
