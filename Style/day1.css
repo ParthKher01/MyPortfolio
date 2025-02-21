@@ -123,6 +123,12 @@ nav ul li {
     margin-bottom: 20px;
 }
 
+.about-info{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
 .intro-image {
     flex: 1;
     max-width: 100%;
