@@ -339,6 +339,23 @@ ul li {
     color: #191d34;
 }
 
+.grit-img {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+}
+
+.grit-img img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+
 /* Footer */
 footer {
     display: flex;
